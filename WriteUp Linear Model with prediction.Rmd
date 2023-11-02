@@ -202,7 +202,16 @@ anova(model.2,model.3)
 The p-value for this comparison between model 2 and model 3 is 0.000000001495. This value tells us that Arm vs Grip is giving more data than Arm vs Sims. Also this value tells us that Model 3 is much better than Model 2 and model 3 already includes model 2 data. 
 From the data table, we are able to see that in this case model.3 was more accurate than model.2. If there were to be no differences between the two models, we would have a 0.000000001495% chance of getting these exact results. The difference in degrees of freedom is 1 since model.2 had 145 and model.3 had 144. The residual sum of squares for each model is 243.07 for model.2 and 188.43 for model.3. This gives us a difference of 54.639 errors making the model.3 more accurate than the model.2.   
 
+### Comparing Models Using anova.
+#### Model 1 vs Model 2 (Informally)
 
+
+```{r}
+anova(model.1,model.2)
+```
+
+
+From this data model.1 has a residual sum of squares of 217.88 and model.2 has 243.07. This gave us a difference of -25.189 which shows us that the model.1 is a more accurate model when comparing Sims to Arm and Grip individually. 
 
 
 
