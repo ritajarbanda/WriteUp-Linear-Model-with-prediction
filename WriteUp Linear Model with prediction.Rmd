@@ -111,7 +111,15 @@ cor(SIMS~GRIP,data=data)
 This correlation value is lower than the SIMS vs ARM correlation value with was 0.6860073 which tells us that SIMS vs ARM has a better Fit than SIMS vs GRIP.
 For Sims vs Grip we have a value of 0.6398458 but for the Sims vs Arm we got 0.6860073. The value of Sims vs Arms is a higher value than that of Sims vs Grip making the correspondence slightly smaller in the correlation of data tables. This shows us that the Sims vs Arms model is more accurate than the Slims vs Grip model.
 
+### Inferential Results Model 2
 
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+```
+
+
+The data above gives us an equation of SIMS= 0.045463x GRIP -4.809675 as the equation for our line of best fit. With the positive coefficient we have a positive slope for the line making it start in the bottom left corner and travel towards the top right hand corner. 
 
 
 
