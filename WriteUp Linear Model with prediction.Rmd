@@ -66,6 +66,11 @@ predict(model.1,target,interval=c("prediction"))
 ```
 
 
+The table shows that our predicted target plot is 0.7063836 but 95% of the time, we are going to have a value between -1.726209 and 3.138977. 
+
+
+### Scartter plot for Model 1 with linear fit
+
 
 
 
