@@ -101,7 +101,15 @@ basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_te
 
 This scatter plot tells us the grip strength that workers need. The  plot tells us that most of the population needs to have GRIP strength between 80 and 130.  
 
+### Numerical Results for model 2
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+
+This correlation value is lower than the SIMS vs ARM correlation value with was 0.6860073 which tells us that SIMS vs ARM has a better Fit than SIMS vs GRIP.
+For Sims vs Grip we have a value of 0.6398458 but for the Sims vs Arm we got 0.6860073. The value of Sims vs Arms is a higher value than that of Sims vs Grip making the correspondence slightly smaller in the correlation of data tables. This shows us that the Sims vs Arms model is more accurate than the Slims vs Grip model.
 
 
 
