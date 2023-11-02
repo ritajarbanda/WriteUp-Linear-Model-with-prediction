@@ -144,7 +144,18 @@ basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_te
 The scatter plot above gives us the line of best fit for the data which allows for us to see which data points are the most accurate in Sims vs Grip. 
 Looking at the scatter plot of SIMS vs ARM and SIMS vs GRIP, we can tell that the data in model 1 plot is more scattered across the ends of the best fit line however on Model 2 scatter plot we have less data point towards the ends of the best fit line.
 
+## Model 3 SIMS~ARM+GRIP
+### Numerical Results
 
+
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+
+
+
+The correlation value for model three cam out to be higher than model one and two. 
+The value above tells us that we have a 0.7326545 correlation between Sims vs Arm+Grip. This gives us a higher value from the Sims vs Arm and Sims vs Grip. It shows that the most accurate model would be when looking at both the Arm and Grip data together rather than comparing them individually against Sims.
 
 
 
