@@ -53,7 +53,11 @@ summary.lm(model.1)
 
 The equation for the line of this scenario is SIMS=0.054563xARM-4.095160. Since we have a positive coefficient, the line increases making it move from the lower left corner to the upper right corner.
 
+### Create target
 
+```{r}
+target<-data.frame(ARM=88, GRIP=44)
+```
 
 
 
