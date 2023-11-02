@@ -179,6 +179,16 @@ predict(model.3,target,interval=c("prediction"))
 
 The table above gives us a value of -1.073855 as the target point for Sims vs Arm+Grip. With a 95% interval the value will be between -3.462155 and 1.314444
 
+### Comparing Models Using anova.
+#### Model 1 vs Model 3
+
+```{r}
+anova(model.1,model.3)
+```
+
+
+The P-value when comparing Model 1 vs Model 3 is 0.000004994 which is very small. This tells us that Model 3 is better than model 1 as we know that model one is already listed in model 3.
+From the data above, we can see that model.3 was more accurate than model.1. This tells us that if there were to be no differences between the two models, we would have a 0.000004994% chance of this being the outcome. Looking at the data we had 145 degree of freedom for the model.1 and 144 for the model.3. In the residual sum of square values, we have 217.88 errors for model.1 and 188.43 errors for model.3. This shows that the plots for the Arm+Grip was more accurate by 29.45 points.  
 
 
 
