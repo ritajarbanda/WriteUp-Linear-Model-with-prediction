@@ -213,7 +213,9 @@ anova(model.1,model.2)
 
 From this data model.1 has a residual sum of squares of 217.88 and model.2 has 243.07. This gave us a difference of -25.189 which shows us that the model.1 is a more accurate model when comparing Sims to Arm and Grip individually. 
 
-
+## Discussion and Conclusion
+The P-value when comparing Model 1 vs Model 3 is 0.000004994 which is very small. This tells us that Model 3 is better than model 1 as we know that model one is already listed in model 3. The p-value for this comparison between model 2 and model 3 is 0.000000001495. This value tells us that Arm vs Grip is giving more data than Arm vs Sims. Also this value tells us that Model 3 is much better than Model 2 and model 3 already includes model 2 data. 
+We learned how to build models, how to edit plot titles, along with the sizing and spacing. We also created models to compare more than one subject at once and analyzed the probability and preciseness of the values that we gathered. These practice examples are going to benefit me by helping me understand how to use these tools and how they can be used in the future for projects to be completed in the future.  
 
 
 
